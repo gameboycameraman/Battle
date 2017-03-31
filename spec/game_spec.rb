@@ -12,4 +12,11 @@ let(:player1) {double(:player1)}
     end
   end
 
+  describe "#reversing" do
+    it "changes turn of players" do
+      game.reverse
+      expect(game.offender).to eq "Naz"
+    end
+  end
+
 end
