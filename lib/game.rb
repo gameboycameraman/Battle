@@ -10,6 +10,10 @@ class Game
     player2.receive_damage # The other player receives damage.
   end
 
+  def gameover
+    @players.first.hp <= 0 || @players.last.hp <= 0
+  end
+
   def reverse
     @players = @players.reverse
   end
